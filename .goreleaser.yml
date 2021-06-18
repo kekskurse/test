@@ -11,8 +11,8 @@ builds:
       - CGO_ENABLED=0
     goos:
       - linux
-      - windows
-      - darwin
+      #- windows
+      #- darwin
 archives:
   - replacements:
       darwin: Darwin
@@ -41,6 +41,8 @@ nfpms:
 
     formats:
     - deb
+    #- apk
+    #- rpm
 
     contents:
     - src: resources/package/test.env
