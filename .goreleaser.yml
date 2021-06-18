@@ -30,3 +30,18 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+nfpms:
+  id: keksurse-test
+  package_name: kekstest
+  vendor: Drum Roll Inc.
+  homepage: https://www.kekskurse.de/
+  maintainer: Drummer <drum-roll@kekskurse.de>
+  description: Software to create fast and easy drum rolls.
+  license: Apache 2.0
+
+  formats:
+  - deb
+
+  contents:
+    - src: resources/paclage/test.env
+      dst: /etc/kekstest/config.env
